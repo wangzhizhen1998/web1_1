@@ -1,1 +1,48 @@
-<mxfile host="app.diagrams.net" modified="2021-06-07T07:39:25.909Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" version="14.7.6" etag="1ds5pHMhlTiDKXBV_Ron" type="github"><diagram id="OYqg5eR_TN3zCy4k2uJD">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-06-08T02:41:16.075Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="WlMJVKdfln00nRzlfx0h" version="14.7.6" type="github">
+  <diagram id="OYqg5eR_TN3zCy4k2uJD" name="第 1 页">
+    <mxGraphModel dx="3554" dy="2028" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c8se-qJbYTkrFyNgKm4x-3" value="car（汽车商品表）" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="590" y="-130" width="360" height="610" as="geometry" />
+        </mxCell>
+        <mxCell id="c8se-qJbYTkrFyNgKm4x-4" value="id: bigint 主键&#xa;name：varchar 车辆名称&#xa;business_id：bigint 商家名称（外键）&#xa;business_name:varchar 商家名称&#xa;business_logo_path:varchar 商家logo路径&#xa;car_type_id: bigint 车型id&#xa;car_type_brand_id:车型品牌id&#xa;car_type_brand_name:varchar 车型品牌&#xa;car_type_name:varchar 车型名称&#xa;img_path：varchar 商品图片路径&#xa;use_type: int 车辆使用类型&#xa;advise_price_start:double 指导价起&#xa;advise_price_end:double 指导价止&#xa;sale_price_start: double 售价起&#xa;sale_price_end: double 售价止&#xa;property_type: int 车辆属性类型&#xa;level_type:int 车辆级别&#xa;site_number:int 座位数量&#xa;gearbox_type:int 变速箱类型&#xa;fuel_type:int 燃料类型&#xa;discharge ：varchar 排量&#xa;discharge_type: int 排放标准类型&#xa;discounts_info: varchar 优惠信息&#xa;details：varchar 图文详情&#xa;admin_apply: varchar 管理员回复&#xa;hits：int 浏览量&#xa;equip_licence_date: date 上牌时间&#xa;use_mileage:double 已使用里程&#xa;origin_province_code varchar 源地址省编码&#xa;origin_province_name varchar源地址省名称&#xa;origin_city_code varchar 源地址市编码&#xa;origin_city_name varchar 源地址市名称&#xa;origin_district_code varchar 源地址区编码&#xa;origin_district_name varchar 源地址区名称&#xa;operator: varchar&#xa;status: int&#xa;create_time: datetime&#xa;update_time: datetime&#xa;remark: varchar&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="c8se-qJbYTkrFyNgKm4x-3">
+          <mxGeometry y="26" width="360" height="584" as="geometry" />
+        </mxCell>
+        <mxCell id="c8se-qJbYTkrFyNgKm4x-5" value="business（商家信息表）" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="-210" width="350" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="c8se-qJbYTkrFyNgKm4x-6" value="id: bigint 主键&#xa;title: varchar  商家名称&#xa;name: varchar 联系人名称&#xa;phone_number: varchar 手机号&#xa;account：varchar 账号&#xa;pass_word：varchar 密码&#xa;address: varchar 地址&#xa;address_phone:详情地址联系电话&#xa;logo_path：varchar logo路径&#xa;type：int 商家类型&#xa;car_type_number：int 车型数量&#xa;introduce：varchar 介绍&#xa;login_time：date 登录时间&#xa;hits: int 浏览量&#xa;dynamic_number:int 动态数量&#xa;province_code varchar 省编码&#xa;province_name varchar 省名称&#xa;city_code varchar市编码&#xa;city_name varchar 市名称&#xa;district_code varchar 区编码&#xa;district_name varchar 区名称&#xa;lat double 经度&#xa;lng double 纬度&#xa;operator: varchar&#xa;status: int&#xa;create_time: datetime&#xa;update_time: datetime&#xa;remark: varchar&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="c8se-qJbYTkrFyNgKm4x-5">
+          <mxGeometry y="26" width="350" height="414" as="geometry" />
+        </mxCell>
+        <mxCell id="c8se-qJbYTkrFyNgKm4x-7" value="business_dynamic（商家动态表）" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="-330" y="50" width="360" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="c8se-qJbYTkrFyNgKm4x-8" value="id: bigint 主键&#xa;name：varchar 车辆名称&#xa;business_id：bigint 商家id（外键）&#xa;business_name:varchar 商家名称&#xa;business_logo_path:varchar 商家logo路径&#xa;business_address: varchar 商家地址&#xa;car_type_id: bigint 车型id（外键）&#xa;car_type_name:varchar 车型名称&#xa;img_path：varchar 商品图片路径&#xa;content：varchar 动态内容&#xa;hits：int 浏览量&#xa;admin_apply: varchar 管理员回复&#xa;operator: varchar&#xa;status: int&#xa;create_time: datetime&#xa;update_time: datetime&#xa;remark: varchar&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="c8se-qJbYTkrFyNgKm4x-7">
+          <mxGeometry y="26" width="360" height="244" as="geometry" />
+        </mxCell>
+        <mxCell id="c8se-qJbYTkrFyNgKm4x-9" value="dict_car_type（车型表）" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="260" width="350" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="c8se-qJbYTkrFyNgKm4x-10" value="id: bigint 主键&#xa;brand_id: bigint 车辆品牌id&#xa;brand_name：varchar 车辆品牌名称&#xa;car_type_id: bigint 车型id&#xa;car_type_name：varchar 车型名称&#xa;sort:int 排序&#xa;operator: varchar&#xa;status: int&#xa;create_time: datetime&#xa;update_time: datetime&#xa;remark: varchar&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="c8se-qJbYTkrFyNgKm4x-9">
+          <mxGeometry y="26" width="350" height="174" as="geometry" />
+        </mxCell>
+        <mxCell id="c8se-qJbYTkrFyNgKm4x-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=ERmandOne;startFill=0;endArrow=ERoneToMany;endFill=0;" edge="1" parent="1" source="c8se-qJbYTkrFyNgKm4x-6" target="c8se-qJbYTkrFyNgKm4x-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c8se-qJbYTkrFyNgKm4x-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;startArrow=ERoneToMany;startFill=0;endArrow=ERmandOne;endFill=0;" edge="1" parent="1" source="c8se-qJbYTkrFyNgKm4x-8" target="c8se-qJbYTkrFyNgKm4x-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c8se-qJbYTkrFyNgKm4x-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.824;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=ERmandOne;startFill=0;endArrow=ERoneToMany;endFill=0;" edge="1" parent="1" source="c8se-qJbYTkrFyNgKm4x-10" target="c8se-qJbYTkrFyNgKm4x-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c8se-qJbYTkrFyNgKm4x-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;startArrow=ERmandOne;startFill=0;endArrow=ERoneToMany;endFill=0;entryX=-0.003;entryY=0.649;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="c8se-qJbYTkrFyNgKm4x-10" target="c8se-qJbYTkrFyNgKm4x-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="319" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
